@@ -10,7 +10,7 @@ const MainPage: FC = () => {
     const navigate = useNavigate();
 
     return (
-        <>
+        <div>
             <section
                 id="main-section-1"
                 className={`${cls.wrapper} ${cls.first}`}
@@ -133,7 +133,7 @@ const MainPage: FC = () => {
                     </Link>
                 </div>
             </section>
-        </>
+        </div>
     );
 };
 export default MainPage;

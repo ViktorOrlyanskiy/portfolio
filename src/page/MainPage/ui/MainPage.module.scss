@@ -74,11 +74,12 @@
 // main-section-2
 .row {
     display: flex;
+    flex: 1 1 auto;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    margin: 0 0 50px;
-    padding-top: 50px;
+    margin: 0 0 30px;
+    padding-top: 70px;
 
     .column {
         flex: 0 0 50%;
