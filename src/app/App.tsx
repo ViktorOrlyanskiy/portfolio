@@ -1,4 +1,4 @@
-import { FC, Suspense } from "react";
+import { FC } from "react";
 import { Navbar } from "widgets/Navbar";
 import { AppRouter } from "./providers/AppRouter";
 import "./styles/index.scss";

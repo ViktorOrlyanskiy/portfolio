@@ -1,16 +1,24 @@
 .Navbar {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: var(--navbar-height);
     padding: 20px;
+    background: var(--bg-color);
 }
 
 .links {
     a {
-        color: var(--primary-color);
         margin: 0 20px;
+        color: var(--primary-color);
+        font-weight: 300;
+        transition: all 0.3s;
+    }
+
+    a:hover {
+        color: var(--tertiary-color);
     }
 
     a:not(:last-child) {

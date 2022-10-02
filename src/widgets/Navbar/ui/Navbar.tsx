@@ -16,13 +16,29 @@ export const Navbar: FC<NavbarProps> = ({ className = "" }) => {
     return (
         <div className={classNames(cls.Navbar, {}, [className])}>
             <div className={cls.links}>
-                <NavLink to={RoutePath.main} style={({ isActive }) => (isActive ? activeStyle : undefined)} end>
+                <NavLink
+                    to={RoutePath.main}
+                    style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }
+                    end
+                >
                     главная
                 </NavLink>
-                <NavLink to={RoutePath.project} style={({ isActive }) => (isActive ? activeStyle : undefined)}>
+                <NavLink
+                    to={RoutePath.project}
+                    style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }
+                >
                     проекты
                 </NavLink>
-                <NavLink to={RoutePath.contacts} style={({ isActive }) => (isActive ? activeStyle : undefined)}>
+                <NavLink
+                    to={RoutePath.contacts}
+                    style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }
+                >
                     контакты
                 </NavLink>
             </div>
