@@ -1,1 +1,1 @@
-export const RoutePath = { main: "/" };
+export const RoutePath = { main: "/", project: "project", contacts: "contacts" };

@@ -5,7 +5,7 @@ import "./styles/index.scss";
 
 export const App: FC = () => {
     return (
-        <div>
+        <div className="main-container">
             <Navbar />
             <AppRouter />
         </div>
