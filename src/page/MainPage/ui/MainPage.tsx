@@ -1,9 +1,7 @@
 import { FC } from "react";
-import { Link } from "react-scroll";
 import { useNavigate } from "react-router-dom";
-import { ArrowDown } from "shared/assets";
 import { RoutePath } from "shared/const";
-import { Button } from "shared/ui";
+import { Button, LinkDown, RowBlock, TitleBlock } from "shared/ui";
 import cls from "./MainPage.module.scss";
 
 const MainPage: FC = () => {
@@ -15,24 +13,19 @@ const MainPage: FC = () => {
                 id="main-section-1"
                 className={`${cls.wrapper} ${cls.first}`}
             >
-                <div className={cls.about}>
-                    <div className={cls.name}>Виктор Орлянский</div>
-                    <div className={cls.profession}>frontend-developer</div>
-                </div>
+                <TitleBlock
+                    title="Виктор Орлянский"
+                    subtitles={["frontend-developer"]}
+                />
                 <Button
                     onClick={() => navigate(RoutePath.contacts)}
                     className={cls.btn}
                 >
                     контакты
                 </Button>
-                <div className={cls.bottom}>
-                    <div></div>
-                    <div>skills</div>
-                    <Link to="main-section-2" smooth={true} duration={500}>
-                        <ArrowDown />
-                    </Link>
-                </div>
+                <LinkDown to="main-section-2">skills</LinkDown>
             </section>
+
             <section id="main-section-2" className={cls.wrapper}>
                 <div className={cls.row}>
                     <div className={cls.column}>
@@ -96,42 +89,27 @@ const MainPage: FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className={cls.bottom}>
-                    <div></div>
-                    <div>what now?</div>
-                    <Link to="main-section-3" smooth={true} duration={500}>
-                        <ArrowDown />
-                    </Link>
-                </div>
+                <LinkDown to="main-section-3">what now?</LinkDown>
             </section>
+
             <section id="main-section-3" className={cls.wrapper}>
-                <div className={cls.about}>
-                    <div className={cls.name}>Что сейчас?</div>
-                    <div className={cls.profession}>
-                        Сейчас я прохожу обучение у автора YouTube-канала Ulbi
-                        TV. <br /> Один из самых топовых рускоязычных каналов
-                        для фронтенд-разработчиков.
-                        <br /> План обучения приложил в проекте.
-                    </div>
-                </div>
+                <TitleBlock
+                    title="Что сейчас?"
+                    subtitles={[
+                        "Сейчас я прохожу обучение у автора YouTube-канала Ulbi TV.",
+                        "Один из самых топовых рускоязычных каналов для фронтенд-разработчиков.",
+                        "План обучения приложил в проекте.",
+                    ]}
+                />
                 <Button
                     onClick={() => navigate(RoutePath.project)}
                     className={cls.btn}
                 >
                     проекты
                 </Button>
-                <div className={cls.bottom}>
-                    <div></div>
-                    <div>up</div>
-                    <Link
-                        to="main-section-1"
-                        smooth={true}
-                        duration={500}
-                        className={cls.linkUp}
-                    >
-                        <ArrowDown />
-                    </Link>
-                </div>
+                <LinkDown up to="main-section-1" className={cls.linkUp}>
+                    up
+                </LinkDown>
             </section>
         </div>
     );

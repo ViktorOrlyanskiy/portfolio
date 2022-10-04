@@ -1,2 +1,2 @@
 import { lazy } from "react";
-export const ProjectFitnessPageAsync = lazy(() => import("./ProjectUlbiPage"));
+export const ProjectUlbiPageAsync = lazy(() => import("./ProjectUlbiPage"));

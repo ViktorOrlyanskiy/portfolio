@@ -1,1 +1,1 @@
-export { ArrowDown } from "./icons";
+export * from "./icons";

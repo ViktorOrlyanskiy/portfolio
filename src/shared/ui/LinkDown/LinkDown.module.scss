@@ -1,0 +1,48 @@
+.LinkDown {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+
+    div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 1px;
+        margin-right: 20px;
+        background: var(--secondary-color);
+    }
+
+    div:nth-child(2) {
+        margin-right: 20px;
+        font-weight: 300;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border: 2px solid var(--primary-color);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        svg {
+            height: 16px;
+            fill: var(--tertiary-color);
+        }
+
+        &:hover {
+            border: 2px solid var(--tertiary-color);
+        }
+    }
+
+    &.linkUp {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+}

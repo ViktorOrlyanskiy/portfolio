@@ -1,0 +1,12 @@
+.RowBlock {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .column {
+        flex: 0 1 50%;
+        height: 100%;
+    }
+}

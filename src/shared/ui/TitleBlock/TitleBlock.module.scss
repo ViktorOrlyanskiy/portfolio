@@ -1,0 +1,16 @@
+.TitleBlock {
+    margin-bottom: 30px;
+    padding-left: 30px;
+    border-left: 2px solid var(--secondary-color);
+
+    .title {
+        margin-bottom: 10px;
+        font: var(--font-xxl);
+    }
+
+    .subtitle {
+        margin-bottom: 5px;
+        font: var(--font-l);
+        font-weight: 300;
+    }
+}
