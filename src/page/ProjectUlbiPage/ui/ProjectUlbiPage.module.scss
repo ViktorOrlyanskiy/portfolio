@@ -2,3 +2,43 @@
     height: 100vh;
     padding: var(--navbar-height) 10% 0;
 }
+
+h2 {
+    padding: 100px 0 70px;
+    font: var(--font-xl);
+    font-weight: 300;
+    text-align: center;
+}
+
+.list {
+    padding: 0 10% 50px;
+}
+
+.item {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+}
+
+.title {
+    flex: 0 0 15%;
+}
+
+.img {
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.text {
+    display: flex;
+    flex: 1 1 75%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
