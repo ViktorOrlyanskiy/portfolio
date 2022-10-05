@@ -21,5 +21,11 @@
 
     --font-size-xxl: 40px;
     --font-line-xxl: 48px;
-    --font-xxl: var(--font-size-xxl) / var(--font-line-xxl) var(--font-family-main);
+    --font-xxl: var(--font-size-xxl) / var(--font-line-xxl)
+        var(--font-family-main);
+
+    // медиа запросы не работают
+    --screen-s: 575px;
+    --screen-m: 991px;
+    --screen-l: 1199px;
 }

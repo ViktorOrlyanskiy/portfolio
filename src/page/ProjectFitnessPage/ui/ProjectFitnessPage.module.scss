@@ -1,16 +1,23 @@
 .wrapper {
     position: relative;
-
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     height: 100vh;
     padding: var(--navbar-height) 10% 0;
+
+    @media (max-width: 991px) {
+        padding: var(--navbar-height) 5% 0;
+    }
+    @media (max-width: 575px) {
+        padding: var(--navbar-height) 3% 0;
+    }
 }
 
 .row {
     height: 470px;
     margin-top: 30px;
+
+    @media (max-width: 991px) {
+        height: auto;
+    }
 }
 
 .columnLeftText {
@@ -19,12 +26,36 @@
     justify-content: flex-start;
     height: 100%;
     text-align: left;
+
+    @media (min-width: 575px) and (max-width: 991px) {
+        height: auto;
+        margin-top: 50px;
+    }
+
+    @media (max-width: 575px) {
+        margin-top: 50px;
+    }
+
+    @media (max-width: 575px) and (max-height: 700px) {
+        margin-top: 10px;
+    }
 }
 
 .linkDown {
     position: absolute;
     bottom: 0;
     left: 10%;
+
+    @media (max-width: 991px) {
+        left: 5%;
+    }
+    @media (max-width: 575px) {
+        left: 3%;
+
+        @media (max-height: 700px) {
+            display: none;
+        }
+    }
 }
 
 .columnImg {
@@ -32,6 +63,13 @@
 
     img {
         height: 470px;
+
+        @media (min-width: 575px) and (max-width: 991px) {
+            height: 700px;
+        }
+        @media (max-width: 575px) and (max-height: 700px) {
+            height: 400px;
+        }
     }
 }
 
@@ -43,6 +81,13 @@
 
     img {
         height: 300px;
+
+        @media (max-width: 765px) {
+            height: 250px;
+        }
+        @media (max-width: 575px) {
+            height: 200px;
+        }
     }
 }
 

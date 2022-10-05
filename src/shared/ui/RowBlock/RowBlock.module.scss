@@ -10,3 +10,23 @@
         height: 100%;
     }
 }
+
+@media (max-width: 991px) {
+    .RowBlock {
+        flex-direction: column;
+
+        .column {
+            flex: 1 1 100%;
+            width: 100%;
+            height: auto;
+
+            &:first-child {
+                order: 1;
+            }
+
+            &:last-child {
+                order: 0;
+            }
+        }
+    }
+}

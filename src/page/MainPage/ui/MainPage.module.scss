@@ -5,10 +5,47 @@
     justify-content: flex-end;
     height: 100vh;
     padding: var(--navbar-height) 10% 0;
+
+    @media (max-width: 991px) {
+        padding: var(--navbar-height) 5% 0;
+    }
+    @media (max-width: 575px) {
+        padding: var(--navbar-height) 3% 0;
+    }
+}
+
+.wrapperRow {
+    position: relative;
+    height: 100vh;
+    padding: var(--navbar-height) 5% 0;
+
+    @media (max-width: 991px) {
+        padding: 0 5%;
+    }
+    @media (max-width: 575px) {
+        padding: 0 3%;
+    }
+
+    .linkDown {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+
+        @media (max-width: 991px) {
+            left: 5%;
+        }
+        @media (max-width: 575px) {
+            display: none;
+        }
+    }
 }
 
 .btn {
     margin: 0 0 100px 30px;
+
+    @media (max-width: 575px) {
+        margin: 0 0 100px;
+    }
 }
 
 // main-section-2
@@ -20,15 +57,31 @@
     width: 100%;
     margin: 0 0 30px;
     padding-top: 70px;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 .column {
     flex: 0 0 50%;
     text-align: center;
 
+    @media (max-width: 768px) {
+        flex: 1 1 100%;
+    }
+
     h2 {
         font: var(--font-xl);
         font-weight: 300;
+
+        @media (max-width: 991px) {
+            padding: 40px 0;
+        }
+        @media (max-width: 767px) {
+            padding: 40px 0 10px;
+        }
     }
 
     h3 {
@@ -40,6 +93,10 @@
         margin-top: 40px;
         padding: 0 20px;
         font-weight: 300;
+
+        @media (max-width: 767px) {
+            margin-top: 20px;
+        }
 
         p {
             margin: 20px 0 10px;

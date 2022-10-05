@@ -14,3 +14,18 @@
         font-weight: 300;
     }
 }
+
+@media (max-width: 575px) {
+    .TitleBlock {
+        padding: 0;
+        border-left: none;
+
+        .title {
+            font: var(--font-xl);
+        }
+
+        .subtitle {
+            font: var(--font-m);
+        }
+    }
+}

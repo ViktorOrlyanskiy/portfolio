@@ -26,7 +26,7 @@ const MainPage: FC = () => {
                 <LinkDown to="main-section-2">skills</LinkDown>
             </section>
 
-            <section id="main-section-2" className={cls.wrapper}>
+            <section id="main-section-2" className={cls.wrapperRow}>
                 <div className={cls.row}>
                     <div className={cls.column}>
                         <h2>Hard</h2>
@@ -88,8 +88,10 @@ const MainPage: FC = () => {
                             </p>
                         </div>
                     </div>
+                    <LinkDown to="main-section-3" className={cls.linkDown}>
+                        what now?
+                    </LinkDown>
                 </div>
-                <LinkDown to="main-section-3">what now?</LinkDown>
             </section>
 
             <section id="main-section-3" className={cls.wrapper}>

@@ -1,6 +1,13 @@
 .wrapper {
     height: 100vh;
     padding: var(--navbar-height) 10% 0;
+
+    @media (max-width: 991px) {
+        padding: var(--navbar-height) 5% 0;
+    }
+    @media (max-width: 575px) {
+        padding: var(--navbar-height) 3% 0;
+    }
 }
 
 h2 {
@@ -8,10 +15,19 @@ h2 {
     font: var(--font-xl);
     font-weight: 300;
     text-align: center;
+
+    @media (max-width: 575px) {
+        padding: 50px 0;
+        font: var(--font-l);
+    }
 }
 
 .list {
     padding: 0 10% 50px;
+
+    @media (max-width: 991px) {
+        padding: 0 0 50px;
+    }
 }
 
 .item {
@@ -21,10 +37,21 @@ h2 {
     justify-content: space-between;
     margin-bottom: 30px;
     color: var(--secondary-color);
+
+    @media (max-width: 991px) {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .title {
     flex: 0 0 15%;
+
+    @media (max-width: 991px) {
+        flex: 1 1 100%;
+        margin-bottom: -5px;
+        color: var(--primary-color);
+    }
 }
 
 .img {
@@ -33,6 +60,10 @@ h2 {
     margin-top: 5px;
     background: var(--primary-color);
     border-radius: 50%;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
 }
 
 .text {
@@ -41,4 +72,8 @@ h2 {
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
+
+    @media (max-width: 991px) {
+        flex: 1 1 100%;
+    }
 }

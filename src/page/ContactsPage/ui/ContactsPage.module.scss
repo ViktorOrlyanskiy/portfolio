@@ -4,6 +4,13 @@
     justify-content: flex-start;
     height: 100vh;
     padding: var(--navbar-height) 10% 0;
+
+    @media (max-width: 991px) {
+        padding: var(--navbar-height) 5% 0;
+    }
+    @media (max-width: 575px) {
+        padding: var(--navbar-height) 3% 0;
+    }
 }
 
 .link {
