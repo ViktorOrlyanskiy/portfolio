@@ -6,7 +6,7 @@ const ProjectUlbiPage: FC = () => {
     return (
         <div>
             <div className={cls.wrapper}>
-                <h2>Кратное содеражние курса</h2>
+                <h2>Краткое содержание курса</h2>
                 <div className={cls.list}>
                     {content.map(({ title, text }) => (
                         <div key={title} className={cls.item}>

@@ -48,7 +48,11 @@ const ContactsPage: FC = () => {
                         </>,
                         <>
                             HeadHunter:
-                            <a href="/" className={cls.link} target="blank">
+                            <a
+                                href="https://spb.hh.ru/applicant/resumes/view?resume=5ad5e156ff0b54e91f0039ed1f594d31697174"
+                                className={cls.link}
+                                target="blank"
+                            >
                                 www.hh.ru/viktor-orlyanskiy
                             </a>
                         </>,
